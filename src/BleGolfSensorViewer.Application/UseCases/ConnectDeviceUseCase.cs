@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using BleGolfSensorViewer.Application.Contracts;
@@ -19,7 +20,7 @@ public sealed class ConnectDeviceUseCase
         _connector = connector ?? throw new ArgumentNullException(nameof(connector));
     }
 
-    public async Task ExecuteAsync(ConnectDeviceRequest request, CancellationToken cancellationToken)
+    public async Task<ConnectDeviceResponse> ExecuteAsync(ConnectDeviceRequest request, CancellationToken cancellationToken)
     {
         if (request is null)
         {
@@ -36,6 +37,20 @@ public sealed class ConnectDeviceUseCase
             throw BleErrors.AlreadyConnected();
         }
 
-        await _connector.ConnectAsync(request.Device.Id, cancellationToken).ConfigureAwait(false);
+        try
+        {
+            var diagnostics = await _connector.ConnectAsync(request.Device.Id, cancellationToken).ConfigureAwait(false);
+            var messages = new List<string>(diagnostics.Notes)
+            {
+                "If connection issues persist, enable Windows Location, ensure no other central is connected, and try pairing in Settings."
+            };
+
+            return new ConnectDeviceResponse(diagnostics, messages);
+        }
+        catch (UnauthorizedAccessException ex)
+        {
+            var message = $"{ex.Message} Enable Windows Location, ensure no other central is connected, and try pairing in Settings.";
+            throw new InvalidOperationException(message, ex);
+        }
     }
 }

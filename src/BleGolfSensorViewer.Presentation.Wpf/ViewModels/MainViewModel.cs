@@ -120,7 +120,11 @@ public sealed partial class MainViewModel : ObservableObject
             try
             {
                 UpdateStatus("Connecting...");
-                await _connectDeviceUseCase.ExecuteAsync(new ConnectDeviceRequest(SelectedDevice), CancellationToken.None);
+                var response = await _connectDeviceUseCase.ExecuteAsync(new ConnectDeviceRequest(SelectedDevice), CancellationToken.None);
+                foreach (var message in response.Messages)
+                {
+                    AppendLog(message);
+                }
                 await _subscribeNotificationsUseCase.StartAsync(SelectedDevice.Id, OnMeasurementReceived, CancellationToken.None);
                 UpdateStatus("Subscribed");
                 AppendLog($"Connected to {SelectedDevice.Name}.");
