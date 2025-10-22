@@ -38,13 +38,15 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <TextBox Grid.Row="2"
-                 Text="{Binding LogText}"
+        <TextBox x:Name="LogBox"
+                 Grid.Row="2"
                  IsReadOnly="True"
-                 VerticalScrollBarVisibility="Auto"
-                 HorizontalScrollBarVisibility="Auto"
+                 Text="{Binding LogText, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
                  TextWrapping="Wrap"
                  AcceptsReturn="True"
-                 FontFamily="Consolas" />
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 FontFamily="Consolas"
+                 TextChanged="LogBox_TextChanged" />
     </Grid>
 </Window>

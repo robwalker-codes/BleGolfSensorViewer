@@ -26,6 +26,7 @@ public sealed partial class MainViewModel : ObservableObject
 
     private DiscoveredDevice? _selectedDevice;
     private string _status = "Idle";
+    private readonly StringBuilder _logBuilder = new();
     private string _logText = string.Empty;
     private bool _isBusy;
 
@@ -225,10 +226,14 @@ public sealed partial class MainViewModel : ObservableObject
         Status = status;
     }
 
-    private void AppendLog(string message)
+    public void AppendLog(string line)
     {
-        var builder = new StringBuilder();
-        builder.AppendLine($"[{DateTimeOffset.Now:HH:mm:ss}] {message}");
-        LogText = string.Concat(LogText, builder.ToString());
+        if (string.IsNullOrWhiteSpace(line))
+        {
+            return;
+        }
+
+        _logBuilder.AppendLine($"[{DateTimeOffset.Now:HH:mm:ss}] {line}");
+        LogText = _logBuilder.ToString();
     }
 }
