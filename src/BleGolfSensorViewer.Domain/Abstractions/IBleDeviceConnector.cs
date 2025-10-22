@@ -12,7 +12,7 @@ public interface IBleDeviceConnector : IAsyncDisposable
 {
     event EventHandler<bool>? ConnectionStateChanged;
 
-    Task ConnectAsync(BleDeviceId deviceId, CancellationToken cancellationToken);
+    Task<BleConnectionDiagnostics> ConnectAsync(BleDeviceId deviceId, CancellationToken cancellationToken);
 
     Task DisconnectAsync(CancellationToken cancellationToken);
 
