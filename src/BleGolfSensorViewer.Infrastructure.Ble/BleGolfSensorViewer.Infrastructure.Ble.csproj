@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Enable if building on non-Windows CI agents -->
+    <!-- <EnableWindowsTargeting>true</EnableWindowsTargeting> -->
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.SDK.NET.Ref" Version="10.0.19041.30" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../BleGolfSensorViewer.Application/BleGolfSensorViewer.Application.csproj" />
     <ProjectReference Include="../BleGolfSensorViewer.Domain/BleGolfSensorViewer.Domain.csproj" />

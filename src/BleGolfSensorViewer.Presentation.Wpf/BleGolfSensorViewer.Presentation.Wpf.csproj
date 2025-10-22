@@ -1,11 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>Manifest/app.manifest</ApplicationManifest>
+    <!-- Enable if building on non-Windows CI agents -->
+    <!-- <EnableWindowsTargeting>true</EnableWindowsTargeting> -->
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
@@ -13,7 +15,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../BleGolfSensorViewer.Application/BleGolfSensorViewer.Application.csproj" />
-    <ProjectReference Include="../BleGolfSensorViewer.Domain/BleGolfSensorViewer.Domain.csproj" />
     <ProjectReference Include="../BleGolfSensorViewer.Infrastructure.Ble/BleGolfSensorViewer.Infrastructure.Ble.csproj" />
   </ItemGroup>
 </Project>
