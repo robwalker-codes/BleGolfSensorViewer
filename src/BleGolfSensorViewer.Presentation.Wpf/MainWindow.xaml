@@ -9,7 +9,7 @@
             <RowDefinition Height="200" />
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0 0 0 12" VerticalAlignment="Center" Spacing="8">
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0 0 0 12" VerticalAlignment="Center">
             <Button Content="Scan" Command="{Binding ScanCommand}" Width="100" />
             <ComboBox Width="250"
                       ItemsSource="{Binding Devices}"

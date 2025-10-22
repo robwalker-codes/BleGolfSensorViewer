@@ -2,44 +2,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Domain", "src/BleGolfSensorViewer.Domain/BleGolfSensorViewer.Domain.csproj", "{43C1DFFF-4957-4863-96BC-442E407EA8CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Domain", "src\BleGolfSensorViewer.Domain\BleGolfSensorViewer.Domain.csproj", "{43C1DFFF-4957-4863-96BC-442E407EA8CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Application", "src/BleGolfSensorViewer.Application/BleGolfSensorViewer.Application.csproj", "{3851787E-EC03-48A2-8753-42C5DFC72C92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Application", "src\BleGolfSensorViewer.Application\BleGolfSensorViewer.Application.csproj", "{3851787E-EC03-48A2-8753-42C5DFC72C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Infrastructure.Ble", "src/BleGolfSensorViewer.Infrastructure.Ble/BleGolfSensorViewer.Infrastructure.Ble.csproj", "{D744CF14-60B3-423D-A0C1-F59B261F1E89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Infrastructure.Ble", "src\BleGolfSensorViewer.Infrastructure.Ble\BleGolfSensorViewer.Infrastructure.Ble.csproj", "{D744CF14-60B3-423D-A0C1-F59B261F1E89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Presentation.Wpf", "src/BleGolfSensorViewer.Presentation.Wpf/BleGolfSensorViewer.Presentation.Wpf.csproj", "{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Presentation.Wpf", "src\BleGolfSensorViewer.Presentation.Wpf\BleGolfSensorViewer.Presentation.Wpf.csproj", "{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Tests", "tests/BleGolfSensorViewer.Tests/BleGolfSensorViewer.Tests.csproj", "{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Tests", "tests\BleGolfSensorViewer.Tests\BleGolfSensorViewer.Tests.csproj", "{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}"
 EndProject
 Global
-GlobalSection(SolutionConfigurationPlatforms) = preSolution
-Debug|Any CPU = Debug|Any CPU
-Release|Any CPU = Release|Any CPU
-EndGlobalSection
-GlobalSection(ProjectConfigurationPlatforms) = postSolution
-{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Release|Any CPU.Build.0 = Release|Any CPU
-{3851787E-EC03-48A2-8753-42C5DFC72C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{3851787E-EC03-48A2-8753-42C5DFC72C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{3851787E-EC03-48A2-8753-42C5DFC72C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{3851787E-EC03-48A2-8753-42C5DFC72C92}.Release|Any CPU.Build.0 = Release|Any CPU
-{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Release|Any CPU.Build.0 = Release|Any CPU
-{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Release|Any CPU.Build.0 = Release|Any CPU
-{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Release|Any CPU.Build.0 = Release|Any CPU
-EndGlobalSection
-GlobalSection(SolutionProperties) = preSolution
-HideSolutionNode = FALSE
-EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C1DFFF-4957-4863-96BC-442E407EA8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3851787E-EC03-48A2-8753-42C5DFC72C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3851787E-EC03-48A2-8753-42C5DFC72C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3851787E-EC03-48A2-8753-42C5DFC72C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3851787E-EC03-48A2-8753-42C5DFC72C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 EndGlobal

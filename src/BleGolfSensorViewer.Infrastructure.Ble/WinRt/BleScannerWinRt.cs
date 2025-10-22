@@ -48,7 +48,7 @@ public sealed class BleScannerWinRt : IBleScanner
     {
         _watcher.Received -= OnAdvertisementReceived;
         _watcher.Stop();
-        _watcher.Dispose();
+        //_watcher.Dispose();
         return ValueTask.CompletedTask;
     }
 }

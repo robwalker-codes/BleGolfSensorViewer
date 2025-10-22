@@ -10,7 +10,7 @@ namespace BleGolfSensorViewer.Infrastructure.Ble.Protocol;
 /// <summary>
 /// Provides protocol decoding by delegating to registered parsers.
 /// </summary>
-public sealed class ProtocolRegistry : IProtocolDecoder
+public class ProtocolRegistry : IProtocolDecoder
 {
     private readonly IReadOnlyList<Func<Measurement, DecodedMeasurement?>> _parsers;
 
