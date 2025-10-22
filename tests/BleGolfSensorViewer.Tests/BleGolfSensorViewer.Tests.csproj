@@ -1,23 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Moq" Version="4.20.70" />
-    <PackageReference Include="xunit" Version="2.5.3" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3">
-      <PrivateAssets>all</PrivateAssets>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.8.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Moq" Version="4.20.72" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="../../src/BleGolfSensorViewer.Protocol/BleGolfSensorViewer.Protocol.csproj" />
-    <ProjectReference Include="../../src/BleGolfSensorViewer.Application/BleGolfSensorViewer.Application.csproj" />
-    <ProjectReference Include="../../src/BleGolfSensorViewer.Domain/BleGolfSensorViewer.Domain.csproj" />
-    <ProjectReference Include="../../src/BleGolfSensorViewer.Infrastructure.Ble/BleGolfSensorViewer.Infrastructure.Ble.csproj" />
+    <ProjectReference Include="..\..\src\BleGolfSensorViewer.Domain\BleGolfSensorViewer.Domain.csproj" />
+    <ProjectReference Include="..\..\src\BleGolfSensorViewer.Application\BleGolfSensorViewer.Application.csproj" />
+    <ProjectReference Include="..\..\src\BleGolfSensorViewer.Protocol\BleGolfSensorViewer.Protocol.csproj" />
   </ItemGroup>
 </Project>
