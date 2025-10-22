@@ -9,5 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="../BleGolfSensorViewer.Application/BleGolfSensorViewer.Application.csproj" />
     <ProjectReference Include="../BleGolfSensorViewer.Domain/BleGolfSensorViewer.Domain.csproj" />
+    <ProjectReference Include="../BleGolfSensorViewer.Protocol/BleGolfSensorViewer.Protocol.csproj" />
   </ItemGroup>
 </Project>

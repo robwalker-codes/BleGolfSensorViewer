@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Infrastructure.Ble", "src\BleGolfSensorViewer.Infrastructure.Ble\BleGolfSensorViewer.Infrastructure.Ble.csproj", "{D744CF14-60B3-423D-A0C1-F59B261F1E89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Protocol", "src\BleGolfSensorViewer.Protocol\BleGolfSensorViewer.Protocol.csproj", "{90623EF0-5BFE-4C40-964F-F43DA023C48E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Presentation.Wpf", "src\BleGolfSensorViewer.Presentation.Wpf\BleGolfSensorViewer.Presentation.Wpf.csproj", "{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BleGolfSensorViewer.Tests", "tests\BleGolfSensorViewer.Tests\BleGolfSensorViewer.Tests.csproj", "{5F59CC41-6533-4F96-A9BC-74C1173CF3F0}"
@@ -30,6 +32,10 @@ Global
 		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D744CF14-60B3-423D-A0C1-F59B261F1E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90623EF0-5BFE-4C40-964F-F43DA023C48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90623EF0-5BFE-4C40-964F-F43DA023C48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90623EF0-5BFE-4C40-964F-F43DA023C48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90623EF0-5BFE-4C40-964F-F43DA023C48E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CBC93E9-4A8B-438A-B336-97DE7FC8DE39}.Release|Any CPU.ActiveCfg = Release|Any CPU

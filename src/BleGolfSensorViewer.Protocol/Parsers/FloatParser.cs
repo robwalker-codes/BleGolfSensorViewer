@@ -1,7 +1,7 @@
 using System;
 using System.Buffers.Binary;
 
-namespace BleGolfSensorViewer.Infrastructure.Ble.Protocol.Parsers;
+namespace BleGolfSensorViewer.Protocol.Parsers;
 
 /// <summary>
 /// Helper for reading little-endian floats from byte spans.
