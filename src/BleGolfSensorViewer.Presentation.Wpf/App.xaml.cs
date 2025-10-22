@@ -15,6 +15,7 @@ public partial class App : System.Windows.Application
         base.OnStartup(e);
         _serviceProvider = Bootstrapper.BuildServiceProvider();
         var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+        MainWindow = mainWindow;
         mainWindow.Show();
     }
 
