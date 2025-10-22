@@ -1,6 +1,6 @@
 using BleGolfSensorViewer.Application.UseCases;
 using BleGolfSensorViewer.Domain.Abstractions;
-using BleGolfSensorViewer.Infrastructure.Ble.Protocol;
+using BleGolfSensorViewer.Protocol;
 using BleGolfSensorViewer.Infrastructure.Ble.WinRt;
 using BleGolfSensorViewer.Presentation.Wpf.ViewModels;
 using Microsoft.Extensions.DependencyInjection;

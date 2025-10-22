@@ -1,6 +1,6 @@
 using System;
 using BleGolfSensorViewer.Domain.Entities;
-using BleGolfSensorViewer.Infrastructure.Ble.Protocol;
+using BleGolfSensorViewer.Protocol;
 using Xunit;
 
 namespace BleGolfSensorViewer.Tests.Infrastructure;

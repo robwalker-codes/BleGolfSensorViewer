@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using BleGolfSensorViewer.Domain.Entities;
+using BleGolfSensorViewer.Domain.Utility;
 
-namespace BleGolfSensorViewer.Infrastructure.Ble.Protocol.Parsers;
+namespace BleGolfSensorViewer.Protocol.Parsers;
 
 /// <summary>
 /// Demonstrates decoding PhiGolf-like payloads.
@@ -11,7 +12,7 @@ public static class ExamplePhigolfParsers
 {
     public static bool TryParseMotionMeasurement(Measurement measurement, out DecodedMeasurement? decoded)
     {
-        if (measurement.ServiceId != Protocol.KnownUuids.MotionService || measurement.CharacteristicId != Protocol.KnownUuids.MotionDataCharacteristic)
+        if (measurement.ServiceId != KnownUuids.MotionService || measurement.CharacteristicId != KnownUuids.MotionDataCharacteristic)
         {
             decoded = null;
             return false;
@@ -45,7 +46,7 @@ public static class ExamplePhigolfParsers
                 measurement.CharacteristicId,
                 "Motion",
                 fields,
-                Domain.Utility.HexEncoder.ToHex(measurement.RawBytes));
+                HexEncoder.ToHex(measurement.RawBytes));
             return true;
         }
         catch (ArgumentOutOfRangeException)

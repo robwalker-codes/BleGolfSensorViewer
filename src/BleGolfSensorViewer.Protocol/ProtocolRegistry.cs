@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using BleGolfSensorViewer.Domain.Abstractions;
 using BleGolfSensorViewer.Domain.Entities;
 using BleGolfSensorViewer.Domain.Utility;
-using BleGolfSensorViewer.Infrastructure.Ble.Protocol.Parsers;
+using BleGolfSensorViewer.Protocol.Parsers;
 
-namespace BleGolfSensorViewer.Infrastructure.Ble.Protocol;
+namespace BleGolfSensorViewer.Protocol;
 
 /// <summary>
 /// Provides protocol decoding by delegating to registered parsers.

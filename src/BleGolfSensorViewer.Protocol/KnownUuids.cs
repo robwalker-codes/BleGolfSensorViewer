@@ -1,6 +1,6 @@
 using System;
 
-namespace BleGolfSensorViewer.Infrastructure.Ble.Protocol;
+namespace BleGolfSensorViewer.Protocol;
 
 /// <summary>
 /// Defines known service and characteristic UUIDs.
