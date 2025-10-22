@@ -25,4 +25,10 @@ public partial class MainWindow : Window
             MeasurementsGrid.ScrollIntoView(lastItem);
         }
     }
+
+    private void LogBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+    {
+        LogBox.CaretIndex = LogBox.Text.Length;
+        LogBox.ScrollToEnd();
+    }
 }
